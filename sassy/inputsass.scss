@@ -1,0 +1,75 @@
+$primary-color: #f8f9fa;
+$secondary-color: #AED5FC;
+$third-color: #FDFEFF;
+$fourth-color: #C5C6C7;
+$text-color:#303030;
+$font-fam: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+
+body{
+  font-family: $font-fam;
+  background-color: $primary-color;
+  color: $text-color;
+}
+.navbar{
+  background-color: $third-color;
+
+  a{
+    color:$text-color;
+    display: inline-block;
+    transition: 0.1s;
+  }
+}
+a:hover{
+  font-weight: bold;
+  font-size: 1.1em;
+  text-transform: uppercase;
+}
+h2:after{
+  content:' ';
+  display:block;
+  border:1.5px solid C5C6C7;
+}
+
+.container-fluid{
+  padding-top: 60px;
+  padding-bottom: 10px;
+  animation:fadeIn 1s;
+  text-align: center;
+  margin-bottom: 10px
+
+}
+.wrapper{
+  margin:0 auto;
+  margin: 5px 40px;
+}
+.col-5{
+  h2{
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 200px;
+  }
+  text-align: left;
+}
+.col-7{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  img{
+    flex-shrink: 0;
+    animation:fadeIn 2.5s;
+
+  }
+
+}
+button img{
+  transition: 0.5s;
+}
+button img:hover{
+    transform:scale(2, 2);
+}
+
+@keyframes fadeIn{
+  from{opacity: 0;}
+  to{opacity: 1;}
+}
